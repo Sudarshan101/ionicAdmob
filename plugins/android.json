@@ -1,0 +1,37 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-admobpro": {
+      "PACKAGE_NAME": "com.wapptech.touchlight"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.wapptech.touchlight"
+    },
+    "cordova-plugin-flashlight": {
+      "PACKAGE_NAME": "com.wapptech.touchlight"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.wapptech.touchlight"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.wapptech.touchlight"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.wapptech.touchlight"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.wapptech.touchlight"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-extension": {
+      "PACKAGE_NAME": "com.wapptech.touchlight"
+    }
+  }
+}

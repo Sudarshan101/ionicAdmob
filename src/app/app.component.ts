@@ -13,9 +13,6 @@ export class MyApp {
   options : any;
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private admob: AdMob) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-
       var admobid: {
         banner: string,
         interstitial: string,
@@ -23,15 +20,15 @@ export class MyApp {
       };
       if (/(android)/i.test(navigator.userAgent)) {
         admobid = { // for Android
-          banner: 'ca-app-pub-6986673151840697/8989287830',
-          interstitial: 'ca-app-pub-6986673151840697/2604468575',
-          Rewarded: 'ca-app-pub-6986673151840697/4848677905'
+          banner: 'ca-app-pub-xxxxxxxxxxxxxxxxx/xxxxxxxxxxx',
+          interstitial: 'ca-app-pub-xxxxxxxxxxxxxxxxx/xxxxxxxxxxx',
+          Rewarded: 'ca-app-pub-xxxxxxxxxxxxxxxxx/xxxxxxxxxxx'
         };
       } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)){
         admobid = { // for iOS
-          banner: 'ca-app-pub-6986673151840697/8989287830',
-          interstitial: 'ca-app-pub-6986673151840697/2604468575',
-          Rewarded: 'ca-app-pub-6986673151840697/4848677905'
+          banner: 'ca-app-pub-xxxxxxxxxxxxxxxxx/xxxxxxxxxxx',
+          interstitial: 'ca-app-pub-xxxxxxxxxxxxxxxxx/xxxxxxxxxxx',
+          Rewarded: 'ca-app-pub-xxxxxxxxxxxxxxxxx/xxxxxxxxxxx'
         };
       }
      // window.analytics.startTrackerWithId("UA-97421936-1");
@@ -49,9 +46,7 @@ export class MyApp {
           autoShow: true
         });
         console.log("call video");
-      },10000);
-
-
+      },5000);
 
       setInterval(()=>{
         this.admob.prepareRewardVideoAd({
@@ -61,8 +56,6 @@ export class MyApp {
         });
         console.log("call video");
       },20000);
-
-
 
       statusBar.styleDefault();
       splashScreen.hide();
