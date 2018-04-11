@@ -1,0 +1,33 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+ion-fab[bottom]{
+      bottom: 46% !important;
+}
+ion-fab[center]{
+  left: 34% !important;
+}
+
+.bg{
+  background: rgba(103,179,250,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(103,179,250,1) 0%, rgba(3,83,168,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(103,179,250,1)), color-stop(100%, rgba(3,83,168,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(103,179,250,1) 0%, rgba(3,83,168,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(103,179,250,1) 0%, rgba(3,83,168,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(103,179,250,1) 0%, rgba(3,83,168,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(103,179,250,1) 0%, rgba(3,83,168,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67b3fa', endColorstr='#0353a8', GradientType=1 );
+}

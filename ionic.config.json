@@ -1,0 +1,8 @@
+{
+  "name": "touchLight",
+  "app_id": "85dab4ff",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
